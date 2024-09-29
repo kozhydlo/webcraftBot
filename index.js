@@ -24,7 +24,7 @@ bot.start((ctx) => {
 });
 
 bot.hears('📢 Телеграм канал', (ctx) => {
-    ctx.reply('Ось посилання на наш Telegram канал: https://t.me/YOUR_CHANNEL_LINK');
+    ctx.reply('Ось посилання на наш Telegram канал: https://t.me/WebCraftChanel');
 });
 
 bot.hears('📚 Уроки', (ctx) => {
