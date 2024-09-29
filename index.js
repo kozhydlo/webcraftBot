@@ -5,7 +5,7 @@ const bot = new Telegraf(process.env.TOKEN);
 
 const mainMenu = Markup.keyboard([
     ['📢 Телеграм канал', '📚 Уроки'],
-    ['🆘 Допомога', '📂 Матеріали']
+    ['🆘 Допомога', '📂 Користне']
 ]).resize();
 
 const lessonsMenu = Markup.keyboard([
@@ -52,23 +52,23 @@ bot.hears('⬅️ Назад', (ctx) => {
 });
 
 bot.hears('🆘 Допомога', (ctx) => {
-    ctx.reply('HelloWorld');
+    ctx.reply('Допомогти тобі в любому напрямку можуть тут [https://t.me/Berlog_Of_Programmers]');
 });
 
-bot.hears('📂 Матеріали', (ctx) => {
-    ctx.reply('Оберіть матеріал:', materialsMenu);
+bot.hears('📂 Користне', (ctx) => {
+    ctx.reply('Оберіть:', materialsMenu);
 });
 
 bot.hears('🎨 Дизайн', (ctx) => {
-    ctx.reply('HelloWorld Дизайн');
+    ctx.reply('1. https://gamma.app/ 2. https://coolors.co/palettes/popular 3. https://uicolors.app/');
 });
 
 bot.hears('💻 Програмування', (ctx) => {
-    ctx.reply('HelloWorld Програмування');
+    ctx.reply('1. https://roadmap.sh/ 2. https://www.freecodecamp.org/ 3. https://mockapi.io/projects');
 });
 
 bot.hears('🖥️ Софт', (ctx) => {
-    ctx.reply('HelloWorld Софт');
+    ctx.reply('Покищо тут пусто 😕');
 });
 
 bot.launch();
