@@ -1,0 +1,21 @@
+# Ігноруємо папку з модулями Node.js
+node_modules/
+
+# Ігноруємо лог-файли
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ігноруємо середовище операційної системи
+.DS_Store
+.env
+
+# Ігноруємо вихідні файли Heroku
+Procfile
+
+# Ігноруємо залежності в Linux
+*.lock
+
+# Ігноруємо інші непотрібні файли
+*.log
+*.env

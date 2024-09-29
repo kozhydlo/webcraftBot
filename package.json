@@ -1,0 +1,14 @@
+{
+  "name": "webcraftbot",
+  "version": "0.0.1",
+  "description": "the telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kozhydlo Mark",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
