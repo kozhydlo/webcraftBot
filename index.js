@@ -1,11 +1,10 @@
-require('dotenv').config();
 const { Telegraf, Markup } = require('telegraf');
 
-const bot = new Telegraf(process.env.TOKEN);
+const bot = new Telegraf('7669526908:AAGS5xV6lLMBSAIO9ZZkIUN2FyLlt1wkApU');
 
 const mainMenu = Markup.keyboard([
     ['📢 Телеграм канал', '📚 Уроки'],
-    ['🆘 Допомога', '📂 Користне']
+    ['🆘 Допомога', '📂 Матеріали']
 ]).resize();
 
 const lessonsMenu = Markup.keyboard([
@@ -32,19 +31,19 @@ bot.hears('📚 Уроки', (ctx) => {
 });
 
 bot.hears('JavaScript', (ctx) => {
-    ctx.reply('https://www.w3schools.com/js/default.asp');
+    ctx.reply('HelloWorld JS');
 });
 
 bot.hears('Python', (ctx) => {
-    ctx.reply('https://www.w3schools.com/python/default.asp');
+    ctx.reply('Привіт, Python');
 });
 
 bot.hears('Node.js', (ctx) => {
-    ctx.reply('https://www.w3schools.com/nodejs/default.asp');
+    ctx.reply('HelloWorld Node.js');
 });
 
 bot.hears('React', (ctx) => {
-    ctx.reply('https://www.w3schools.com/react/default.asp');
+    ctx.reply('HelloWorld React');
 });
 
 bot.hears('⬅️ Назад', (ctx) => {
@@ -52,23 +51,23 @@ bot.hears('⬅️ Назад', (ctx) => {
 });
 
 bot.hears('🆘 Допомога', (ctx) => {
-    ctx.reply('Допомогти тобі в любому напрямку можуть тут [https://t.me/Berlog_Of_Programmers]');
+    ctx.reply('HelloWorld');
 });
 
-bot.hears('📂 Користне', (ctx) => {
-    ctx.reply('Оберіть:', materialsMenu);
+bot.hears('📂 Матеріали', (ctx) => {
+    ctx.reply('Оберіть матеріал:', materialsMenu);
 });
 
 bot.hears('🎨 Дизайн', (ctx) => {
-    ctx.reply('1. https://gamma.app/ 2. https://coolors.co/palettes/popular 3. https://uicolors.app/');
+    ctx.reply('HelloWorld Дизайн');
 });
 
 bot.hears('💻 Програмування', (ctx) => {
-    ctx.reply('1. https://roadmap.sh/ 2. https://www.freecodecamp.org/ 3. https://mockapi.io/projects');
+    ctx.reply('HelloWorld Програмування');
 });
 
 bot.hears('🖥️ Софт', (ctx) => {
-    ctx.reply('Покищо тут пусто 😕');
+    ctx.reply('HelloWorld Софт');
 });
 
 bot.launch();
